@@ -4,13 +4,7 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-
-	<package name="helloPkg" extends="struts-default" namespace="/crm" >
-		<action name="hello" class="com.revanwang.struts1.HelloAction" method="sayHello" >
-			<result name="hi" type="dispatcher" >
-				<param name="location">/JSP/hi.jsp</param>
-			</result>
-		</action>
-	</package>
-
+	<!-- 引入其他配置的xml文件 -->
+	<include file="struts_hello.xml"></include>
+	<include file="struts_go.xml"></include>
 </struts>

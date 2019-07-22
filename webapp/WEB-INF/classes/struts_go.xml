@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<package name="otherPkg" extends="struts-default"
+		namespace="/go">
+		<action name="other" class="com.revanwang.struts2.OtherAction"
+			method="goHello">
+
+			<!-- 2、Action重定向到另一个Action -->
+			<result name="go" type="redirectAction" >
+				<!-- 另一个Action的命名空间 -->
+				<param name="namespace">/crm</param>
+				<!-- 另一个Action的资源名称 -->
+				<param name="actionName">hello</param>
+			</result>
+
+			<!-- 1、重定向（redirect） -->
+			<!-- <result name="go" type="redirect" > <param name="location">/JSP/hi.jsp</param> 
+				</result> -->
+		</action>
+	</package>
+
+</struts>

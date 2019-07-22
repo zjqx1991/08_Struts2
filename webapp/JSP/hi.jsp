@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Hi Struts2。。。。。
+	Go Struts2。。。。。
 </body>
 </html>
