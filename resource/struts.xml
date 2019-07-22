@@ -5,6 +5,9 @@
 
 <struts>
 	<!-- 引入其他配置的xml文件 -->
+	<!-- 
 	<include file="struts_hello.xml"></include>
 	<include file="struts_go.xml"></include>
+	 -->
+	<include file="struts_test.xml"></include>
 </struts>
